@@ -2,6 +2,7 @@
 /// - frac: The frac to convert
 /// -> The resulting lr
 #let convert(frac) = {
+  let edge = math.class("fence", [])
   assert(frac.func() == math.frac, message: "Expected a frac")
   let num = if frac.num.func() == [].func() {
     math.lr([\(] + frac.num + [\)])
@@ -13,7 +14,7 @@
   } else {
     frac.denom
   }
-  return math.lr([#num #math.mid(math.class("fence", "/")) #denom])
+  return math.lr([#edge #num #math.mid(math.class("fence", "/")) #denom #edge])
 }
 
 /// Convert a `sequence` to a new `sequence` with all `frac` converted to `lr` with slash
