@@ -16,4 +16,5 @@ $sfrac(1/2)$, $sfrac(3, 4)$ or even $sfrac((5 + 6) / 7 + 8)$ are acceptable.
 
 ## Notice
 
-This function converts only the outermoest fraction.
+1. This function converts only the outermoest fraction.
+2. This function has an option to turn off the auto parenthesizing feature: `slash-frac.with(parens: false)`
