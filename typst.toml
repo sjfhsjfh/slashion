@@ -1,6 +1,6 @@
 [package]
 name = "slashion"
-version = "0.1.0"
+version = "0.1.1"
 entrypoint = "lib.typ"
 authors = ["sjfhsjfh"]
 license = "MIT"
